@@ -30,10 +30,10 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://telegra.ph/file/f983d857f3c
 FSUB_IMG = (environ.get('FSUB_IMG', 'https://i.ibb.co/cShkPjcZ/x.jpg')).split() 
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '661301615').split()]  #Admin Id
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002539643813 -1002437757672 -1002326836438 -1002273978945').split()] #Movie Database Channel Id
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001762991266 -1002437757672 -1002326836438 -1002273978945').split()] #Movie Database Channel Id
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002387711357'))  #Log Channel Id
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002267374333'))  #Streming Log Channel Id
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002539643813'))  #Movie Update Channel Id
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1001762991266'))  #Movie Update Channel Id
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002545276301')) #Premium Subscription Log Channel Id
 reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002283841746') #Movie Request Channel Id
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
@@ -54,12 +54,12 @@ OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/KMSAdmin24_bot')
 UPDATE_CHANNEL_LNK = environ.get('UPDATE_CHANNEL_LNK', 'https://t.me/kmsmovies1')
 
 #Force Subscription Channel (Put Same Channel Id In Both Veriables)
-AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '-1002539643813')) 
+AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '-1001762991266')) 
 AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', '-1002578415041'))
 
 IS_VERIFY = is_enabled('IS_VERIFY', False)
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002539643813')) #Verification Channel Id 
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002539643813')) #If Anyone Set Your Bot In Any Group And Set Shortner In That Group Then In This Channel The All Details Come
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1001762991266')) #Verification Channel Id 
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001762991266')) #If Anyone Set Your Bot In Any Group And Set Shortner In That Group Then In This Channel The All Details Come
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://telegra.ph/file/9ecc5d6e4df5b83424896.jpg")
 
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/KMSAdmin24_bot")
