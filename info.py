@@ -37,7 +37,7 @@ MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1001762991266')
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002545276301')) #Premium Subscription Log Channel Id
 reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002283841746') #Movie Request Channel Id
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-100') #Support Chat Id
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1001762991266') #Support Chat Id
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://KMSCinemas:KMSCinemas2024@cluster0.8t9qu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0") #MongoDB Url
