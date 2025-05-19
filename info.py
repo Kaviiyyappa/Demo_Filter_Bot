@@ -30,7 +30,7 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://telegra.ph/file/f983d857f3c
 FSUB_IMG = (environ.get('FSUB_IMG', 'https://i.ibb.co/cShkPjcZ/x.jpg')).split() 
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '661301615').split()]  #Admin Id
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002539643813 -1002437757672 -1002326836438 -1002273978945').split()] #Movie Database Channel Id
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002578415041 -1002437757672 -1002326836438 -1002273978945').split()] #Movie Database Channel Id
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002387711357'))  #Log Channel Id
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002267374333'))  #Streming Log Channel Id
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1001762991266'))  #Movie Update Channel Id
@@ -49,7 +49,7 @@ MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "True"), False) # Type Tr
 DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://ajithkumar:ajithkumar@cluster0.dlscqhf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+xIanUTg_dq5kN2U1')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+PhtsMgT6VD85YmU1')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+y9jt4ezWFZ03Zjhl')
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/KMSAdmin24_bot')
 UPDATE_CHANNEL_LNK = environ.get('UPDATE_CHANNEL_LNK', 'https://t.me/kmsmovies1')
 
